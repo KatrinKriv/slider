@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Owl</title>
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+
+</head>
+<body>
+  <div  class="owl-carousel owl-theme">
+    <div class="item"><img src="img/img_10.jpg" alt="bacteria"></div>
+    <div class="item"><img src="img/img_7.png" alt="bacteria"></div>
+    <div class="item"><img src="img/img_6.jpg" alt="bacteria"></div>
+    <div class="item"><img src="img/img_5.jpg" alt="bacteria"></div>
+    <div class="item"><img src="img/img_1.jpg" alt="bacteria"></div>
+  </div>
+  <div class="link"><a href="index.html">See less</a></div>
+  <footer>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+  </footer>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      rtl:true,
+      loop:true,
+      margin:10,
+      nav:true,
+      responsive:{
+        0:{
+          items:1
+        },
+        600:{
+          items:3
+        },
+        1000:{
+          items:5
+        }
+      }
+    })
+  </script>
+
+</body>
+</html>
