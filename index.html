@@ -52,14 +52,35 @@
 <!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
-        spaceBetween: 30,
+        slidesPerView: 3,
+        spaceBetween: 50,
         loop: true,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-    });
+
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+
+        effect: 'creative',
+        creativeEffect: {
+            prev: {
+                // will set `translateZ(-400px)` on previous slides
+                translate: [0, 0, -400],
+            },
+            next: {
+                // will set `translateX(100%)` on next slides
+                translate: ['100%', 0, 0],
+            },
+        },
+        });
+
+
+
+
 
 </script>
 </body>
